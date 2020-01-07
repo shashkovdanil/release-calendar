@@ -74,6 +74,8 @@ function Calendar({ firebase }) {
                   release => release.release_day === day,
                 )
 
+                console.log(dayReleases)
+
                 return (
                   <td
                     style={{
