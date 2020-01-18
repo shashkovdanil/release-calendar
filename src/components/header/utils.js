@@ -1,4 +1,4 @@
-export default function getMonthName(monthNumber) {
+export function getMonthName(monthNumber) {
   switch (monthNumber) {
     case 0:
       return 'Январь'
