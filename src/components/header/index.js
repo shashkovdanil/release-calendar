@@ -97,14 +97,14 @@ const StyledHeader = styled.header`
 `
 
 function Header({ type, month, year }) {
-  const currentMonth = months.find(m => m.jsNumber === month).rus
+  const currentMonth = months.find(m => m.jsNumber === month)?.rus
 
   const nextMonth =
-    month === 11 ? 'январь' : months.find(m => m.jsNumber === month + 1).rus
+    month === 11 ? 'январь' : months.find(m => m.jsNumber === month + 1)?.rus
   const nextYear = nextMonth === 'январь' ? year + 1 : year
 
   const prevMonth =
-    month === 0 ? 'декабрь' : months.find(m => m.jsNumber === month - 1).rus
+    month === 0 ? 'декабрь' : months.find(m => m.jsNumber === month - 1)?.rus
   const prevYear = prevMonth === 'декабрь' ? year - 1 : year
 
   return (
@@ -115,7 +115,7 @@ function Header({ type, month, year }) {
             'is-disable': prevYear < 2020,
           })}
           to={`/${type}/${
-            months.find(m => m.rus === prevMonth).eng
+            months.find(m => m.rus === prevMonth)?.eng
           }-${prevYear}`}
         >
           ← <span>{prevMonth}</span>
@@ -126,7 +126,7 @@ function Header({ type, month, year }) {
         <Link
           className="link date-link next"
           to={`/${type}/${
-            months.find(m => m.rus === nextMonth).eng
+            months.find(m => m.rus === nextMonth)?.eng
           }-${nextYear}`}
         >
           <span>{nextMonth}</span> →
@@ -135,13 +135,13 @@ function Header({ type, month, year }) {
       <div>
         <Link
           className={cx('link type-link', { 'is-active': type === 'films' })}
-          to={`/films/${months.find(m => m.jsNumber === month).eng}-${year}`}
+          to={`/films/${months.find(m => m.jsNumber === month)?.eng}-${year}`}
         >
           Фильмы
         </Link>
         <Link
           className={cx('link type-link', { 'is-active': type === 'games' })}
-          to={`/games/${months.find(m => m.jsNumber === month).eng}-${year}`}
+          to={`/games/${months.find(m => m.jsNumber === month)?.eng}-${year}`}
         >
           Игры
         </Link>

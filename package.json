@@ -28,6 +28,8 @@
     "url-parse": "^1.4.7"
   },
   "devDependencies": {
+    "@babel/plugin-proposal-optional-chaining": "^7.8.3",
+    "babel-preset-gatsby": "^0.2.27",
     "dotenv": "^8.2.0",
     "prettier": "^1.19.1"
   },
@@ -41,12 +43,11 @@
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "clean": "gatsby clean"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/shashkovdanil/release-calendar"
   },
   "eslintConfig": {
     "extends": "react-app"
