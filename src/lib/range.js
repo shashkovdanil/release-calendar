@@ -1,4 +1,4 @@
-export function range(min = 0, max) {
+function range(min = 0, max) {
   let arr = []
 
   for (let i = min; i <= max; i++) {
@@ -7,3 +7,5 @@ export function range(min = 0, max) {
 
   return arr
 }
+
+export default range

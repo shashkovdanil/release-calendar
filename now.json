@@ -1,14 +1,14 @@
 {
   "build": {
     "env": {
-      "GATSBY_FIREBASE_API_KEY": "@gatsby_firebase_api_key",
-      "GATSBY_FIREBASE_AUTH_DOMAIN": "@gatsby_firebase_auth_domain",
-      "GATSBY_FIREBASE_DATABASE_URL": "@gatsby_firebase_database_url",
-      "GATSBY_FIREBASE_PROJECT_ID": "@gatsby_firebase_project_id",
-      "GATSBY_FIREBASE_STORAGE_BUCKET": "@gatsby_firebase_storage_bucket",
-      "GATSBY_FIREBASE_MESSAGING_SENDER_ID": "@gatsby_firebase_messaging_sender_id",
-      "GATSBY_FIREBASE_APP_ID": "@gatsby_firebase_app_id",
-      "GATSBY_FIREBASE_MEASUREMENT_ID": "@gatsby_firebase_measurement_id"
+      "FIREBASE_API_KEY": "@firebase_api_key",
+      "FIREBASE_AUTH_DOMAIN": "@firebase_auth_domain",
+      "FIREBASE_DATABASE_URL": "@firebase_database_url",
+      "FIREBASE_PROJECT_ID": "@firebase_project_id",
+      "FIREBASE_STORAGE_BUCKET": "@firebase_storage_bucket",
+      "FIREBASE_MESSAGING_SENDER_ID": "@firebase_messaging_sender_id",
+      "FIREBASE_APP_ID": "@firebase_app_id",
+      "FIREBASE_MEASUREMENT_ID": "@firebase_measurement_id"
     }
   }
 }

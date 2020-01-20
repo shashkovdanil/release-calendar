@@ -1,0 +1,97 @@
+.Header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 8px 16px;
+  background-color: var(--primary);
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+
+.Logo {
+  img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.Date {
+  display: flex;
+  align-items: center;
+
+  @media (max-width: 768px) {
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  h1 {
+    margin: 0 24px;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 56px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+
+    @media (max-width: 768px) {
+      margin: 0;
+      font-size: 20px;
+    }
+
+    .Year {
+      font-weight: normal;
+      letter-spacing: normal;
+    }
+  }
+}
+
+.Link {
+  position: relative;
+  font-size: 18px;
+  line-height: 20px;
+  color: #fff;
+  text-decoration: none;
+  text-transform: capitalize;
+  white-space: nowrap;
+  opacity: 0.85;
+  transition: 0.2s ease;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &.isDate {
+    &.isDisable {
+      pointer-events: none;
+      opacity: 0.15;
+    }
+
+    @media (max-width: 768px) {
+      padding: 12px;
+      font-size: 24px;
+
+      span {
+        display: none;
+      }
+    }
+  }
+
+  &.isType {
+    &.isActive {
+      color: var(--secondary);
+      opacity: 1;
+    }
+  }
+}
+
+.TypeSeparator {
+  margin: 0 14px;
+  color: #fff;
+}
